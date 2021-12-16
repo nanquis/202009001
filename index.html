@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="master.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--탐버튼-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -154,7 +156,7 @@
       </script>
 
         <p>
-          <a href="" class="typewrite" data-period="2000" data-type='[ "밝은 에너지를 전하는<br>디자이너 김나경입니다. &#58;&#41;", "I am Creative.", "I Love Design.", "I Love to imagine." ]'>
+          <a href="" class="typewrite" data-period="2000" data-type='[ "밝은 에너지를 전하는<br>디자이너 김나경입니다. &#58;&#41;", "I am Creative.", "I Love Design.", "I Love to Imagine." ]'>
             <span class="wrap"></span>
           </a>
         </p>
@@ -190,17 +192,29 @@
           <a href="sub04.html"><p>View more &#62;</a><p>
         </div>
       </div>
+
+
+
+      <!--탑버튼-->
+      <script type=text/javascript> $(document).ready(function(){ $(".return-top").hide(); // 탑 버튼 숨김
+        $(function () { $(window).scroll(function () { if ($(this).scrollTop() > 100) { // 스크롤 내릴 표시
+        $('.return-top').fadeIn(); } else { $('.return-top').fadeOut(); } }); $('.return-top').click(function () { $('body,html').animate({ scrollTop: 0 }, 800); // 탑 이동 스크롤 속도
+        return false; }); }); });
+      </script>
+      <a class="return-top" href="#" style="right:15px; bottom:15px; position:fixed; z-index:9999;">
+        <img src="img/btn_up_light.png">
+      </a>
     </section>
 
     <footer>
       <div class="I_footer">
-        <div class="sns">
-          <p><a href="https://www.instagram.com/nananna104/?hl=ko" target="_blank">INSTAGRAM</a></p>
-          <span>|</span>
-          <p><a href="https://www.youtube.com/channel/UCdw9IWueoHhJGCHng_QNB0w" target="_blank">YOUTUBE</a></p>
-          <span>|</span>
-          <p><a href="https://www.behance.net/rladskdbcfee" target="_blank">BEHANCE</a></p>
-        </div>
+        <ul>
+          <li class="sns"><a href="https://www.instagram.com/nananna104/?hl=ko" target="_blank">INSTAGRAM</a></li>
+          <li class="stick">|</li>
+          <li class="sns"><a href="https://www.youtube.com/channel/UCdw9IWueoHhJGCHng_QNB0w" target="_blank">YOUTUBE</a></li>
+          <li class="stick">|</li>
+          <li class="sns"><a href="https://www.behance.net/rladskdbcfee" target="_blank">BEHANCE</a></li>
+        </ul>
 
         <div class="copyright">
           <p>Copyright 2021. Kim na gyeong all rights reserved.</p>
