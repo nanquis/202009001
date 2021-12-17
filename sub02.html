@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>nananna's portfolio</title>
+    <link rel="stylesheet" href="master.css">
+
+    <!--탐버튼-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <header>
+      <div class="gnb">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/00_02_logo.png" alt="logo">
+          </a>
+        </div>
+        <nav>
+          <ul class="nav_b">
+            <div class="scale">
+              <li class="scale-up-center"><a href="sub01.html">EDITORIAL</a></li>
+            </div>
+            <div class="scale">
+              <li class="scale-up-center"><a href="sub02.html">ADVERTISE</a></li>
+            </div>
+            <div class="scale">
+              <li class="scale-up-center"><a href="sub03.html">PACKAGE</a></li>
+            </div>
+            <div class="scale">
+              <li class="scale-up-center"><a href="sub04.html">IDENTITY</a></li>
+            </div>
+            <div class="about"><a href="sub05.html">ABOUT</a></div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="sub_content">
+      <div class="news1">
+        <img src="img/02_01_newspaper1.jpg" alt="n1" style="float: right;">
+        <h1>water<br>pollution<br>advertisement</h1>
+        <p>더는 야생동물들만의 문제가 아니라 먹을 것으로 통해<br>결국 우리에게 다시 돌아온다는 것을 전하고 싶었습니다.</p>
+      </div>
+
+      <div class="poster1">
+        <img src="img/02_02_poster1.jpg" alt="p1" style="float: right;">
+        <h1>monster<br>energy drink<br>advertisement</h1>
+        <p>마치 '몬스터 에너지 드링크'를 마시면 에너지를 충전할 수<br>있는 것처럼 피로회복을 배터리를 충전하는 것에 비유했습니다.</p>
+      </div>
+
+      <div class="news2">
+        <img src="img/02_03_newspaper2.jpg" alt="n2" style="float: right;">
+        <h1>blood<br>donate<br>advertisement</h1>
+        <p>관을 통해 나눈 피를 사랑으로 표현했습니다.<br>사랑을 시각화하기 위해 줄을 하트 모양으로 만들었습니다.</p>
+      </div>
+
+      <div class="poster2">
+        <img src="img/02_04_poster2.jpg" alt="p2" style="float: right;">
+        <h1>vaseline<br>advertisement</h1>
+        <p>바세린의 보습효과를 광고하기 위해<br>거친 피부를 선인장에 비유했습니다.</p>
+      </div>
+
+
+
+      <!--탑버튼-->
+      <script type=text/javascript> $(document).ready(function(){ $(".return-top").hide(); // 탑 버튼 숨김
+        $(function () { $(window).scroll(function () { if ($(this).scrollTop() > 100) { // 스크롤 내릴 표시
+        $('.return-top').fadeIn(); } else { $('.return-top').fadeOut(); } }); $('.return-top').click(function () { $('body,html').animate({ scrollTop: 0 }, 800); // 탑 이동 스크롤 속도
+        return false; }); }); });
+      </script>
+      <a class="return-top" href="#" style="right:15px; bottom:15px; position:fixed; z-index:9999;">
+        <img src="img/btn_up_light.png">
+      </a>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <ul class="ft">
+          <li class="sns"><a href="https://www.instagram.com/nananna104/?hl=ko" target="_blank">INSTAGRAM</a></li>
+          <li class="stick">|</li>
+          <li class="sns"><a href="https://www.youtube.com/channel/UCdw9IWueoHhJGCHng_QNB0w" target="_blank">YOUTUBE</a></li>
+          <li class="stick">|</li>
+          <li class="sns"><a href="https://www.behance.net/rladskdbcfee" target="_blank">BEHANCE</a></li>
+        </ul>
+
+        <div class="copyright">
+          <p>Copyright 2021. Kim na gyeong all rights reserved.</p>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>
