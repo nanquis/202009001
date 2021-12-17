@@ -6,6 +6,10 @@
     <title>nananna's portfolio</title>
     <link rel="stylesheet" href="master.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
     <!--탐버튼-->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -29,6 +33,10 @@
   </head>
 
   <body>
+    <script>
+      AOS.init();
+    </script>
+
     <header>
       <div class="gnb">
         <div class="logo">
@@ -56,36 +64,81 @@
       </div>
     </header>
 
+
     <section>
-      <div class="ci_r1">
-        <img src="img/04_01_ci.jpg" alt="ci1" style="float: right;">
-        <h1>부안군<br>문화재단 CI</h1>
-        <p>부안군 문화재단에서 부안문화의 ‘ㅂㅇㅁㅎ’를<br>도형화하여 심볼을 제작했습니다.</p>
+      <div class="white">
       </div>
-      <div class="r2">
-        <img src="img/04_02_ci.jpg" alt="ci2" style="float: left;">
-        <img src="img/04_03_ci.jpg" alt="ci3" style="float: right;">
+      <div class="sub05_bg">
+        <h1>Imagination into reality</h1>
       </div>
 
-      <div class="bi_r1">
-        <img src="img/04_04_bi.jpg" alt="bi1" style="float: right;">
-        <h1>차 브랜드<br>그리내 BI 개발</h1>
-        <p>심볼을 글이나 그림을 완성한 후 찍는<br>낙관처럼 제작하여 완성된 브랜드임을 표현했습니다.</p>
-      </div>
-      <div class="r2">
-        <img src="img/04_05_bi.jpg" alt="bi2" style="float: left;">
-        <img src="img/04_06_bi.jpg" alt="bi3" style="float: right;">
+      <h1 class="title">ABOUT ME</h1>
+      <div class="info">
+        <img src="img/05_01_me.jpg" alt="me">
+        <div class="bold1">
+          <h3>NAME</h3>
+          <h3>BIRTH</h3>
+          <h3>INSTA</h3>
+          <h3>PHONE</h3>
+          <h3>E-MAIL</h3>
+        </div>
+        <div class="light1">
+          <p>김나경</p>
+          <p>2002&#46;01&#46;04</p>
+          <p>&#64;nananna104</p>
+          <p>010&#45;0207&#45;1225</p>
+          <p>nananna104&#64;naver&#46;com</p>
+        </div>
+        <div class="bold2">
+          <h3>EDUCATION</h3>
+          <h3>LICENSE</h3>
+        </div>
+        <div class="light2">
+          <p class="edu">2020&#46;03&#126;2022&#46;02<br>유한대학교 시각디자인학과</p>
+          <p class="li">2021&#46;12&#46;25<br>GTQ 1급</p>
+          <p class="li">2022&#46;02&#46;07<br>GTQI 1급</p>
+        </div>
       </div>
 
-      <div class="bi_r1">
-        <img src="img/04_07_bi.jpg" alt="bi4" style="float: right;">
-        <h1>goodwill store<br>CI redesign</h1>
-        <p>장애인이 차별받지 않고 행복하게 살길 바라는<br>사명처럼 웃음을 줄 수 있는 로고로 디자인했습니다.</p>
+
+
+      <h1 class="title">SKILL</h1>
+      <div class="skill">
+        <div data-aos="zoom-in" class="ps">
+          <div class="skill_text">
+            <p class="adobe">Ps</p>
+            <p class="percent">70%</p>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="id">
+          <div class="skill_text">
+            <p class="adobe">Id</p>
+            <p class="percent">70%</p>
+          </div></div>
+        <div data-aos="zoom-in" class="ae">
+          <div class="skill_text">
+            <p class="adobe">Ae</p>
+            <p class="percent">50%</p>
+          </div></div>
+        <div data-aos="zoom-in" class="ai">
+          <div class="skill_text">
+            <p class="adobe">Ai</p>
+            <p class="percent">85%</p>
+          </div></div>
+        <div data-aos="zoom-in" class="dn">
+          <div class="skill_text">
+            <p class="adobe">Dn</p>
+            <p class="percent">70%</p>
+          </div></div>
+        <div data-aos="zoom-in" class="pr">
+          <div class="skill_text">
+            <p class="adobe">Pr</p>
+            <p class="percent">50%</p>
+          </div></div>
       </div>
-      <div class="r2">
-        <img src="img/04_08_bi.jpg" alt="bi5" style="float: left;">
-        <img src="img/04_09_bi.jpg" alt="bi6" style="float: right;">
-      </div>
+
+      <h1 class="contact">CONTACT ME &#58;&#41;</h1>
+      <div class="con_img"></div>
 
 
 
@@ -109,7 +162,6 @@
           <li class="stick">|</li>
           <li class="sns"><a href="https://www.behance.net/rladskdbcfee" target="_blank">BEHANCE</a></li>
         </ul>
-
         <div class="copyright">
           <p>Copyright 2021. Kim na gyeong all rights reserved.</p>
         </div>
