@@ -10,6 +10,7 @@
     <!--탐버튼-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+    <!--파비콘-->
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
@@ -54,113 +55,113 @@
     </script>
     <!--특정위치로 쩜프해서 이동 시작-->
 
-    <header class="header">
-      <div class="logo">
-      <a href="index.html">
-      <img src="img/00_01_logo.png" alt="logo"></a>
+    <header>
+      <div class="gnb">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/00_01_logo.png" alt="logo">
+          </a>
+        </div>
+        <nav>
+          <ul class="nav_w">
+            <div class="scale">
+              <li class="scale-up-center"><a href="sub01.html">EDITORIAL</a></li>
+            </div>
+            <div class="scale">
+              <li class="scale-up-center"><a href="sub02.html">ADVERTISE</a></li>
+            </div>
+            <div class="scale">
+              <li class="scale-up-center"><a href="sub03.html">PACKAGE</a></li>
+            </div>
+            <div class="scale">
+              <li class="scale-up-center"><a href="sub04.html">IDENTITY</a></li>
+            </div>
+            <div class="about"><a href="sub05.html">ABOUT</a></div>
+          </ul>
+        </nav>
       </div>
     </header>
-
-    <nav>
-      <ul class="nav_w">
-          <div class="scale">
-            <li class="scale-up-center"><a href="sub01.html">EDITORIAL</a></li>
-          </div>
-          <div class="scale">
-            <li class="scale-up-center"><a href="sub02.html">ADVERTISE</a></li>
-          </div>
-          <div class="scale">
-            <li class="scale-up-center"><a href="sub03.html">PACKAGE</a></li>
-          </div>
-          <div class="scale">
-            <li class="scale-up-center"><a href="sub04.html">IDENTITY</a></li>
-          </div>
-      		<a href="sub05.html" class="about">
-            <li>ABOUT</li>
-          </a>
-      </ul>
-    </nav>
-
 
     <script>
       AOS.init();
     </script>
+
     <section>
       <div class="content">
 
-      <script>
-      const content = "Hi. I'm Somi, \n front-end developer.";
-      const text = document.querySelector(".text");
-      let i = 0;
+        <script>
+        const content = "Hi. I'm Somi, \n front-end developer.";
+        const text = document.querySelector(".text");
+        let i = 0;
 
-      function typing(){
-      let txt = content[i++];
-      text.innerHTML += txt=== "\n" ? "<br/>": txt;
-      if (i > content.length) {
-      text.textContent = "";
-      i = 0;}}
-      setInterval(typing, 200)
-      </script>
+        function typing(){
+        let txt = content[i++];
+        text.innerHTML += txt=== "\n" ? "<br/>": txt;
+        if (i > content.length) {
+        text.textContent = "";
+        i = 0;}}
+        setInterval(typing, 200)
+        </script>
 
-      <!--typewrite-->
-      <script>
-        var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-        };
+        <!--typewrite-->
+        <script>
+          var TxtType = function(el, toRotate, period) {
+          this.toRotate = toRotate;
+          this.el = el;
+          this.loopNum = 0;
+          this.period = parseInt(period, 10) || 2000;
+          this.txt = '';
+          this.tick();
+          this.isDeleting = false;
+          };
 
-        TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+          TxtType.prototype.tick = function() {
+          var i = this.loopNum % this.toRotate.length;
+          var fullTxt = this.toRotate[i];
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+          if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
+          var that = this;
+          var delta = 200 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 2; }
+          if (this.isDeleting) { delta /= 2; }
 
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
+          if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+          }
 
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-        };
+          setTimeout(function() {
+          that.tick();
+          }, delta);
+          };
 
-        window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-        };
-      </script>
+          window.onload = function() {
+          var elements = document.getElementsByClassName('typewrite');
+          for (var i=0; i<elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+          }
+          // INJECT CSS
+          var css = document.createElement("style");
+          css.type = "text/css";
+          css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+          document.body.appendChild(css);
+          };
+        </script>
 
         <p>
           <a href="" class="typewrite" data-period="2000" data-type='[ "밝은 에너지를 전하는<br>디자이너 김나경입니다. &#58;&#41;", "I am Creative.", "I Love Design.", "I Love to Imagine." ]'>
@@ -215,7 +216,7 @@
 
     <footer>
       <div class="I_footer">
-        <ul>
+        <ul class="ft">
           <li class="sns"><a href="https://www.instagram.com/nananna104/?hl=ko" target="_blank">INSTAGRAM</a></li>
           <li class="stick">|</li>
           <li class="sns"><a href="https://www.youtube.com/channel/UCdw9IWueoHhJGCHng_QNB0w" target="_blank">YOUTUBE</a></li>
